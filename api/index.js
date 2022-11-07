@@ -22,7 +22,7 @@ const { conn } = require("./src/db.js");
 const { getCountriesToDb } = require("./src/loader/loadtoDB");
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   server.listen(process.env.PORT, () => {
     getCountriesToDb();
     console.log("%s listening at 3001"); // eslint-disable-line no-console
