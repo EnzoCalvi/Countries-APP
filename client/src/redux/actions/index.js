@@ -76,7 +76,7 @@ export function getActivities() {
   return async (dispatch) => {
     const response = await axios.get(`/activity`);
     const mapped = response.data.map((el) => {
-      return { name: el.name, id: el.id, countries: el.countries };
+      return { season: el.season, countries: el.countries };
     });
     return dispatch({
       type: "GET_ACTIVITIES",
@@ -85,6 +85,6 @@ export function getActivities() {
   };
 }
 
-export function getActivity(id) {
-  return { type: "GET_ACTIVITY", payload: id };
+export function getActivity(season) {
+  return { type: "GET_ACTIVITY", payload: season };
 }

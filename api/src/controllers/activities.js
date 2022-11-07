@@ -1,24 +1,6 @@
 const { Country, Activity } = require("../db");
 
 const postActivity = async (req, res) => {
-  // const { name, difficulty, duration, season, countryID } = req.body;
-
-  // const createActivity = await Activity.create({
-  //   name: name,
-  //   difficulty: difficulty,
-  //   duration: duration,
-  //   season: season,
-  // });
-
-  // const checkCountry = await Country.findAll({
-  //   where: {
-  //     id: countryID,
-  //   },
-  // });
-
-  // const addActivity = await createActivity.addCountries(checkCountry);
-
-  // return res.send(addActivity);
   const { name, dificulty, duration, season, countryID } = req.body;
 
   try {
@@ -54,10 +36,3 @@ const getActivities = async (req, res) => {
 };
 
 module.exports = { postActivity, getActivities };
-
-// try {
-//   const pj = await Character.create({ ...req.body });
-//   if (pj) return res.status(201).json(pj);
-// } catch (error) {
-//   return res.status(404).send("Error en alguno de los datos provistos");
-// }

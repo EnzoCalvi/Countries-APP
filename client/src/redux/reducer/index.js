@@ -79,7 +79,7 @@ const rootReducer = (state = initialState, action) => {
     case "GET_ACTIVITY":
       return {
         ...state,
-        countries: state.activities.find((el) => el.id === action.payload)
+        countries: state.activities.find((el) => el.season === action.payload)
           .countries,
       };
     default:

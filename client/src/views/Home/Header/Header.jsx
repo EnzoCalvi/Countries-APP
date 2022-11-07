@@ -35,6 +35,11 @@ class Header extends Component {
     this.props.setLoading();
 
     setTimeout(() => {
+      if (this.state.activity !== "all") {
+        setTimeout(() => {
+          this.props.getActivity(this.state.activity);
+        }, 200);
+      }
       if (this.state.continent !== "all") {
         setTimeout(() => {
           this.props.getContinent(this.state.continent);
@@ -43,11 +48,6 @@ class Header extends Component {
       if (this.state.order !== "all") {
         setTimeout(() => {
           this.props.filter(this.state.order);
-        }, 200);
-      }
-      if (this.state.activity !== "all") {
-        setTimeout(() => {
-          this.props.getActivity(parseInt(this.state.activity));
         }, 200);
       }
     }, 100);
@@ -68,7 +68,6 @@ class Header extends Component {
           onChange={(e) => this.handleFilter(e)}
           name="continent"
           className={styles.select}
-          disabled={this.state.activity === "all" ? false : true}
           value={this.state.continent}
         >
           <option value="all">Continente</option>
@@ -82,7 +81,6 @@ class Header extends Component {
           onChange={(e) => this.handleFilter(e)}
           className={styles.select}
           name="order"
-          disabled={this.state.activity === "all" ? false : true}
           value={this.state.order}
         >
           <option value="all" defaultValue>
@@ -104,8 +102,8 @@ class Header extends Component {
           </option>
           {this.props.activities &&
             this.props.activities.map((activity) => (
-              <option key={activity.id} value={activity.id}>
-                {activity.name}
+              <option key={activity.season} value={activity.season}>
+                {activity.season}
               </option>
             ))}
         </select>
