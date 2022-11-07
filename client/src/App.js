@@ -18,7 +18,7 @@ function App() {
   return (
     <React.Fragment>
       <Route exact path="/" component={Countries} />
-      <Route exact path="/:id" component={Details} />
+      <Route exact path="/country/:id" component={Details} />
       <Route exact path="/activities" component={ActivityForm} />
     </React.Fragment>
   );
