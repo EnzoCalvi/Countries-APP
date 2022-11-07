@@ -1,0 +1,33 @@
+.activities {
+  margin: auto;
+  margin-bottom: 3vh;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: auto;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  gap: 1vw;
+  background-color: #3b4252;
+  border-radius: 10px;
+}
+.activityCard {
+  background-color: #4c566a;
+  box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.66);
+  padding: 1vw;
+  box-sizing: border-box;
+  border-style: none;
+  border-bottom: 2vh;
+  height: 250px;
+  width: 300px;
+  margin: 1vh auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.activityCard > h3 > span {
+  font-weight: 700;
+}

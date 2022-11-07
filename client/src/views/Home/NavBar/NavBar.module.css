@@ -1,0 +1,21 @@
+.navbar {
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  gap: 0.5vw;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar button {
+  background-color: #d08770;
+  border-radius: 10%;
+  height: 40px;
+  width: 40px;
+  color: black;
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}

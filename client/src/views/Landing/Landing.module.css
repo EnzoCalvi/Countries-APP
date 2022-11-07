@@ -1,0 +1,32 @@
+.landing {
+  margin: auto;
+  background-image: url("back3.jpeg");
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  height: 100vh;
+}
+
+.logo {
+  width: 60vw;
+  text-align: left;
+  margin-left: 4vw;
+}
+
+.logo > h1 {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 200;
+  color: #eceff4;
+  font-style: italic;
+}
+
+.logo > a {
+  color: #eceff4;
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo > a:hover {
+  color: #ebcb8b;
+}

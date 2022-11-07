@@ -1,0 +1,115 @@
+.detail {
+  width: 90vw;
+  background-color: #3b4252;
+  border-radius: 10px;
+  margin: auto;
+  color: #fff;
+  margin-top: 3vh;
+}
+
+.head {
+  display: flex;
+  background-color: #bf616a;
+  border-radius: 999px;
+  width: 90vw;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 2vh;
+  padding: 2vh;
+  margin-left: -20px;
+}
+
+.head > a {
+  margin-left: 2vw;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.head > a > button {
+  background-color: #bf616a;
+  color: #2e3440;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 999px;
+}
+
+.head > a > button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.head > h1 {
+  margin-left: -100px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.2rem;
+  color: #2e3440;
+  font-weight: 400;
+}
+
+.flag {
+  text-align: center;
+}
+
+.flag > img {
+  width: 40vw;
+}
+
+.properties {
+  width: 40vw;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: left;
+}
+
+.properties td {
+  height: 4vh;
+}
+
+.properties span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.activity {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 2vh;
+  padding: 2vh;
+}
+
+.activity > a {
+  margin-left: auto;
+  margin-right: 5vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.activity > a > button {
+  background-color: #bf616a;
+  color: #2e3440;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 999px;
+  padding: 1vh;
+}
+
+.activity > a > button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.activity > h1 {
+  margin-left: 5vw;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.2rem;
+  color: #eceff4;
+  font-weight: 400;
+}
