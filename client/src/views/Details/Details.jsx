@@ -16,7 +16,7 @@ class Details extends React.Component {
       <div>
         <div className={styles.detail}>
           <div className={styles.head}>
-            <Link to="/main">
+            <Link to="/">
               <button>Volver</button>
             </Link>
             <h1>{this.props.country.name}</h1>

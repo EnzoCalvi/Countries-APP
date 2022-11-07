@@ -125,7 +125,7 @@ class CreateActivity extends Component {
         method="post"
       >
         <div className={styles.head}>
-          <Link to="/main">
+          <Link to="/">
             <button>Volver</button>
           </Link>
           <h1>Crear Actividad</h1>

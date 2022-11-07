@@ -67,7 +67,7 @@ export default function Countries() {
           showCountries.map((country) => {
             return (
               <Link
-                to={`/main/${country.id}`}
+                to={`/${country.id}`}
                 key={country.id}
                 className={styles.link}
               >
